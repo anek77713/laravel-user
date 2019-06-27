@@ -1,0 +1,43 @@
+{
+    "name": "anek77713/laraveluser",
+    "description": ":description",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Aleks Shyshoff",
+            "email": "aleks.shyshoff@gmail.com",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/anek77713/laraveluser",
+    "keywords": ["Laravel", "LaravelUser"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "anek77713\\LaravelUser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "anek77713\\LaravelUser\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "anek77713\\LaravelUser\\LaravelUserServiceProvider"
+            ],
+            "aliases": {
+                "LaravelUser": "anek77713\\LaravelUser\\Facades\\LaravelUser"
+            }
+        }
+    }
+}
